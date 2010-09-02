@@ -2,7 +2,7 @@ Name:		usb_modeswitch-data
 Version:	20100826
 Release:	%mkrel 1
 Summary:	USB Modeswitch gets 4G cards in operational mode 
-Group:		Applications/System
+Group:		System/Configuration/Hardware
 License:	GPLv2+
 URL:		http://www.draisberghof.de/usb_modeswitch/
 %define	fname	usb-modeswitch-data
