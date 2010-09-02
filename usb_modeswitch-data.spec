@@ -22,7 +22,7 @@ This package contains the data files needed for usb_modeswitch to function.
 
 %prep
 %setup -q -n %{fname}-%{version}
-%patch0 -p1 -b .dwm156~
+%patch0 -p1
 
 %install
 rm -rf %{buildroot}
