@@ -1,6 +1,6 @@
 Name:		usb_modeswitch-data
 Version:	20100826
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Activating Switchable USB Devices on Linux
 Group:		System/Configuration/Hardware
 License:	GPLv2+
@@ -8,6 +8,7 @@ URL:		http://www.draisberghof.de/usb_modeswitch/
 %define	fname	usb-modeswitch-data
 Source0:	http://www.draisberghof.de/%{name}/%{fname}-%{version}.tar.bz2
 Patch0:		usb-modeswitch-data-dlink-dwm156.patch
+Patch1:		usb-modeswitch-data-samsung-gtb3730.patch
 BuildArch:	noarch
 Requires:	usb_modeswitch
 
@@ -23,6 +24,7 @@ This package contains the data files needed for usb_modeswitch to function.
 %prep
 %setup -q -n %{fname}-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %install
 rm -rf %{buildroot}
