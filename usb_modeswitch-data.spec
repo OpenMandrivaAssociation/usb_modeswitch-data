@@ -23,14 +23,9 @@ This package contains the data files needed for usb_modeswitch to function.
 %setup -q -n %{fname}-%{version}
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root,-)
 %doc ChangeLog README
 /lib/udev/rules.d/40-usb_modeswitch.rules
 %dir %{_datadir}/usb_modeswitch
