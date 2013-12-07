@@ -1,6 +1,6 @@
 Name:		usb_modeswitch-data
 Version:	20130807
-Release:	4
+Release:	5
 Summary:	Activating Switchable USB Devices on Linux
 Group:		System/Configuration/Hardware
 License:	GPLv2+
