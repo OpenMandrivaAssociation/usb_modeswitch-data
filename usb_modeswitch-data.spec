@@ -1,5 +1,5 @@
 Name:		usb_modeswitch-data
-Version:	20170205
+Version:	20170806
 Release:	1
 Summary:	Activating Switchable USB Devices on Linux
 Group:		System/Configuration/Hardware
