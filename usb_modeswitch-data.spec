@@ -1,6 +1,6 @@
 Name:		usb_modeswitch-data
-Version:	20170806
-Release:	2
+Version:	20191128
+Release:	1
 Summary:	Activating Switchable USB Devices on Linux
 Group:		System/Configuration/Hardware
 License:	GPLv2+
@@ -23,7 +23,7 @@ This package contains the data files needed for usb_modeswitch to function.
 %setup -q -n %{fname}-%{version}
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc ChangeLog README
