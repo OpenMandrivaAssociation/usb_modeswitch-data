@@ -1,6 +1,6 @@
 Name:		usb_modeswitch-data
 Version:	20191128
-Release:	2
+Release:	3
 Summary:	Activating Switchable USB Devices on Linux
 Group:		System/Configuration/Hardware
 License:	GPLv2+
@@ -20,13 +20,13 @@ sold by Huawei, T-Mobile, Vodafone, Option, ZTE, Novatel.
 This package contains the data files needed for usb_modeswitch to function.
 
 %prep
-%setup -q -n %{fname}-%{version}
+%autosetup -n %{fname}-%{version} -p1
 
 %install
-%make_install
+%make_install RULESDIR=%{buildroot}%{_udevrulesdir}
 
 %files
 %doc ChangeLog README
-/lib/udev/rules.d/40-usb_modeswitch.rules
+%{_udevrulesdir}/40-usb_modeswitch.rules
 %dir %{_datadir}/usb_modeswitch
 %{_datadir}/usb_modeswitch/*
