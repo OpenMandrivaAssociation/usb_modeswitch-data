@@ -4,7 +4,7 @@ Release:	4
 Summary:	Activating Switchable USB Devices on Linux
 Group:		System/Configuration/Hardware
 License:	GPLv2+
-URL:		http://www.draisberghof.de/usb_modeswitch/
+URL:		https://www.draisberghof.de/usb_modeswitch/
 %define	fname	usb-modeswitch-data
 Source0:	http://www.draisberghof.de/usb_modeswitch/%{fname}-%{version}.tar.bz2
 BuildArch:	noarch
